@@ -1,2 +1,1 @@
-## markdown
-## 这是一个描述项目的功能的特点信息的文件
+## 使用 fecs + husky+ lint-staged 配置项目
