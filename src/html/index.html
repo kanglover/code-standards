@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML规范</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+    <div class="sidebar"></div>
+    <div id="nav"></div>
+    <p class="comment"></p>
+    <label><input type="text" name="title"></label>
+    <table cellspacing="0"></table>
+
+    <label><input type="text" disabled></label>
+    <label><input type="checkbox" checked></label>
+    <label><input type="checkbox" name="confirm" value="on"> 我已确认上述条款</label>
+
+    <label for="username">用户名：</label>
+    <input type="textbox" name="username" id="username">
+
+    <button type="submit">提交</button>
+    <button type="button">取消</button>
+
+    <form action="/login" method="post">
+        <p>
+            <label><input name="username" type="text" placeholder="用户名"></label>
+        </p>
+<!--        <p><input name="password" type="password" placeholder="密码"></p>-->
+    </form>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        <source src="audio.ogg" type="audio/ogg">
+        <object width="100" height="50" data="audio.mp3">
+            <embed width="100" height="50" src="audio.swf">
+        </object>
+    </audio>
+
+    <video width="100" height="50" controls>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg" type="video/ogg">
+        <object width="100" height="50" data="video.mp4">
+            <embed width="100" height="50" src="video.swf">
+        </object>
+    </video>
+
+    <script src="../js/index.js"></script>
+</body>
+</html>

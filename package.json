@@ -1,0 +1,28 @@
+{
+  "name": "code-standards",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged",
+    "lint:script": "fecs --type=js,css"
+  },
+  "lint-staged": {
+    "src/**/*.js": ["eslint --fix", "git add"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:script && npm run lint:style"
+    }
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8"
+  }
+}

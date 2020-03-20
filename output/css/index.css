@@ -1,0 +1,85 @@
+.selector {
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    background: url(//cn.bing.com/images/bg.png)
+    no-repeat 0 0;
+}
+
+.backImage {
+    background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(.04, #585e7c),
+    color-stop(.52, #737ba2)
+    );
+}
+
+.post,
+.page,
+.comment {
+    line-height: 1.5;
+}
+
+
+main > nav {
+    padding: 10px;
+}
+
+article[charater="juliet"] {
+    voice-family: "Vivien Leigh", victoria, female;
+}
+
+.post {
+    /* 尽量缩写 */
+    font: 12px/1.5 arial, sans-serif;
+}
+
+/*布局 > 尺寸 > 文字排版 > 视觉*/
+.sidebar {
+    /* formatting model: positioning schemes / offsets / z-indexes / display / ...  */
+    position: absolute;
+    top: 50px;
+    left: 0;
+    overflow-x: hidden;
+    /* box model: sizes / margins / paddings / borders / ...  */
+    width: 200px;
+    height: 20px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    /* typographic: font / aligns / text styles / ... */
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+    /* line-height: 1.5; */
+    /* visual: colors / shadows / gradients / ... */
+    background: #f5f5;
+    -webkit-transition: color 1s;
+       -moz-transition: color 1s;
+         -o-transition: color 1s;
+}
+
+panel {
+    opacity: .8;
+}
+
+body {
+    background-position: center top;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+.container {
+    /* 定义文本段落 */
+    line-height: 1.5;
+}
+
+.box {
+    /* 指定动画属性 */
+    transition: color 1s, border-color 1s;
+}

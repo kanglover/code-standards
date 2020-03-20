@@ -1,0 +1,42 @@
+{
+    "eslint": {
+        "env": {
+            // "es6": true,
+            "node": true,
+            "browser": false
+        },
+        "rules": {
+             "no-console": 0,
+             // else 与前{ 不用换行
+             "brace-style": [2, "1tbs", {}],
+             "fecs-valid-jsdoc": {
+                 "requireAuthor": false
+             },
+             "fecs-camelcase": false,
+             "spaced-comment": false,
+             "max-len": false,
+             "fecs-eol-last": false,
+             "fecs-valid-map-set": false,
+             "no-confusing-arrow": false,
+             "fecs-no-require": false,
+             "fecs-properties-quote": false,
+             "fecs-use-for-of": false,
+             "max-nested-callbacks": 5,
+             "no-loop-func": false,
+             "fecs-max-statements": 100
+        }
+    },
+    "csshint": {
+        "min-font-size": 10
+    },
+    "htmlcs":{
+        "html-lang": false,
+        "no-meta-css": false,
+        "self-close": false,
+        "max-len": false,
+        "label-for-input": true
+    },
+    "jformatter": {},
+    "esformatter": {},
+    "csscomb": {}
+}
