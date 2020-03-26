@@ -15,8 +15,11 @@
     }
   },
   "lint-staged": {
-  "src/**/*.js": ["fecs --type=js,css,html", "git add ."]
-},
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add ."
+    ]
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
