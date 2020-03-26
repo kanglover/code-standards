@@ -16,7 +16,7 @@
   },
   "lint-staged": {
     "src/**/*.js": [
-      "fecs"
+      "fecs -type:js"
     ]
   },
   "author": "",
