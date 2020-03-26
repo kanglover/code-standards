@@ -21,6 +21,7 @@
   }
 ```
 
+## server/package.json
 ```
 "husky": {
     "hooks": {
