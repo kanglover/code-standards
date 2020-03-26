@@ -9,14 +9,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged",
-    "lint:script": "fecs --type=js,css"
+    "lint:script": "fecs --type=js,css,html"
   },
   "lint-staged": {
-    "src/**/*.js": ["eslint --fix", "git add"]
+    "src/**/*.js": ["fecs --type=js,css,html", "git add"]
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:script && npm run lint:style"
+      "pre-commit": "npm run lint:script",
+      "pre-commit": "lint-staged"
     }
   },
   "author": "",
